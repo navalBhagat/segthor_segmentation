@@ -1,0 +1,165 @@
+{
+  "snapshot": {
+    "path": "../../../notebooks/data/phase7_refinement_results.json",
+    "sha256": "9e9e6e4279e542a72866189c213d9700733f1e1be27d4efcdee0716649748ef9"
+  },
+  "figures": {
+    "slide17_dice": {
+      "png": {
+        "path": "slide17_dice.png",
+        "sha256": "3c727682c735132103903e901b83bc05c88339789ae92a8da0ff91e3f17f5d34"
+      },
+      "pdf": {
+        "path": "slide17_dice.pdf",
+        "sha256": "63eb78effc5f4762abd54b361611ad3c85c775fe60b2f6fe08e1029ed481e692"
+      }
+    },
+    "refinement_comparison": {
+      "png": {
+        "path": "refinement_comparison.png",
+        "sha256": "6e14f5f9935c1f1272bde4313c36f72f64d9e20d036b99b611640f7de6fbd4e3"
+      },
+      "pdf": {
+        "path": "refinement_comparison.pdf",
+        "sha256": "ea5f73c50c83a53720da099fdad6f5669cd155d430329f6e32856ed5a18062f7"
+      }
+    },
+    "slide19_other_metrics": {
+      "png": {
+        "path": "slide19_other_metrics.png",
+        "sha256": "4715998c263362a46f7fb9cb086c78c99f64b3e24af7e5f21ee0a87d8fc26de5"
+      },
+      "pdf": {
+        "path": "slide19_other_metrics.pdf",
+        "sha256": "76fb9ccf855666438b2a9455237deb1c73349c19f949a162b3eb4c19ce71de78"
+      }
+    },
+    "slide18_summary": {
+      "png": {
+        "path": "slide18_summary.png",
+        "sha256": "8a80a9af78f59270f2c6dad71d4d46176b9b24b7594d05bd126d03f413a4f2b3"
+      },
+      "pdf": {
+        "path": "slide18_summary.pdf",
+        "sha256": "91763f0f110152360af8d46123a76707d0f6a0fa8c11b8df5ae6a3c5d8463947"
+      }
+    },
+    "slide15_fixed_cleanup": {
+      "png": {
+        "path": "slide15_fixed_cleanup.png",
+        "sha256": "6fd0a542fd15d6902fa7c5afac5011d15767018b992da9c5d912bfb9207c96cf"
+      },
+      "pdf": {
+        "path": "slide15_fixed_cleanup.pdf",
+        "sha256": "b3f4c7004dabcef866daf016c80c882a0b9e727ce27a783af3a5961fc132e59b"
+      }
+    },
+    "slide16_pipeline": {
+      "png": {
+        "path": "slide16_pipeline.png",
+        "sha256": "fb00e48298c0373f8110b763787456668ef444d5278f264cdd26e3f1a85e5dde"
+      },
+      "pdf": {
+        "path": "slide16_pipeline.pdf",
+        "sha256": "e29d61beed1273293e4a3f60d71420ec82b1fcf0ec3928ff8e4ab5d0b73f17ef"
+      }
+    },
+    "refiner_training_curves": {
+      "png": {
+        "path": "refiner_training_curves.png",
+        "sha256": "6504f65e64add8d317bc3c57fe36b8eaf71b422875bc11e97803088f32c54d14"
+      },
+      "pdf": {
+        "path": "refiner_training_curves.pdf",
+        "sha256": "6da666a6840c1e828ec530bbb6f02d462dcc2ac22b4f6dbf935931d4fe057956"
+      }
+    },
+    "refiner_validation_curves": {
+      "png": {
+        "path": "refiner_validation_curves.png",
+        "sha256": "b96caa5811397b64335471f9ab90b082984da5b300b4eb2bf4bed333d92931a3"
+      },
+      "pdf": {
+        "path": "refiner_validation_curves.pdf",
+        "sha256": "ebd816ab539555cba6d90c7e15610197e7863c0cd9c0966fe8512c4384dac146"
+      }
+    },
+    "refiner_selected_epochs": {
+      "png": {
+        "path": "refiner_selected_epochs.png",
+        "sha256": "0c62661b246fa2b113fcb352ca1b342519c910ad5bc9205ff76877d9297f4c55"
+      },
+      "pdf": {
+        "path": "refiner_selected_epochs.pdf",
+        "sha256": "7240cc08baae8a24d88d87cfa680f270dc9b1a0791294143b069282a7c56a81b"
+      }
+    },
+    "patient_3d_metrics_raw_enet": {
+      "png": {
+        "path": "patient_3d_metrics_raw_enet.png",
+        "sha256": "c1fce3b316c5f6535ba6392fcc0d0f9f2a1d4ba935ec62ce737af26bca307a18"
+      },
+      "pdf": {
+        "path": "patient_3d_metrics_raw_enet.pdf",
+        "sha256": "b0dcc176e4cb4e79730fb571875f691f40082ad09be6d2cdeb05a92e5c091691"
+      }
+    },
+    "patient_3d_metrics_raw_refined": {
+      "png": {
+        "path": "patient_3d_metrics_raw_refined.png",
+        "sha256": "01b528f4901115899ee4e3c7069536667b9f062b51caecb2a2aed56f2b764839"
+      },
+      "pdf": {
+        "path": "patient_3d_metrics_raw_refined.pdf",
+        "sha256": "000037bd744f36770dadd0af493deb83dcc3280d29ee6bceea9a76050b27bf18"
+      }
+    },
+    "patient_3d_metrics_latest_enet": {
+      "png": {
+        "path": "patient_3d_metrics_latest_enet.png",
+        "sha256": "8c73cfdd912f26a9b73f5cfccf595fcb11ffc6ea9cd4ae94b22ecb574dbfb23e"
+      },
+      "pdf": {
+        "path": "patient_3d_metrics_latest_enet.pdf",
+        "sha256": "9bfc96ab58dacaa1a1a1ca72e6ce276e3c6222ae4f3e8ba7dd607288827699b4"
+      }
+    },
+    "patient_3d_metrics_latest_refined": {
+      "png": {
+        "path": "patient_3d_metrics_latest_refined.png",
+        "sha256": "a2e049bf6e594cc1b64849660ba756672df522d3b93cffb932afacb550c82666"
+      },
+      "pdf": {
+        "path": "patient_3d_metrics_latest_refined.pdf",
+        "sha256": "8661b0edde000187d743ad62066053c9d7ca2ee608ca9183a1cd56f5f3f968cb"
+      }
+    }
+  },
+  "source_report_manifest": {
+    "path": "/gpfs/home2/scur0214/snellius-medicalai/phase7-integration-20261012/presentation-live-audit/final-named-report/figure_manifest.json",
+    "sha256": "fb83640fbb5c4ae43ea5d875ccb94c085663a2a03f16a653ef7c087479bb7565"
+  },
+  "coverage": {
+    "upstream_main": "c63dcf3e306521b42a668f1f4c82754dcff90a58",
+    "live_presentation_slides": 66,
+    "replaced_slides": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      23
+    ],
+    "patient_diagnostics": "Existing plot.py reused for raw ENet/refinement and fixed-cleanup ENet/refinement; signed RVD from original evaluations."
+  },
+  "dice_layout_update": {
+    "source_report_manifest": {
+      "path": "/gpfs/home2/scur0214/snellius-medicalai/phase7-integration-20261012/slide17-layout-fix/figure_manifest.json",
+      "sha256": "7f09f193e74cfdfe75159ac38f1a94ca35eb2f9dc586801dfc852bb8a1a8ed7d"
+    },
+    "figures": [
+      "slide17_dice",
+      "refinement_comparison"
+    ]
+  }
+}

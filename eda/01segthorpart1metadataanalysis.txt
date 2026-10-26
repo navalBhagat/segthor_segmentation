@@ -1,0 +1,11 @@
+First step ran on segthorpart1 - reading metadata and check for: shape, voxel spacing
+orientation, form codes, intensity rescaling, origin (all for both CT and GT).
+
+
+what the csv implies: clean headers, all pairs have same shape, LPS orientation,
+no rescaling in the header, and no boundary breaks.
+
+But there are some differences:
+
+when checking the origins, we can see that 6 patients are slightly off. If they were from the same scanner we would expect uniform x and y (z is just scanning height start).
+But we see two distinct groups: Group 1 with x origin at 250 and a y of around 430, while group 2 has the 14 other patients with both an x as well as y origin of around 300 

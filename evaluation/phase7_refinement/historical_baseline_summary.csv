@@ -1,0 +1,16 @@
+configuration,organ,metric,mean,sample_sd
+baseline_0,esophagus,dice,0.4889,0.0179
+baseline_0,esophagus,hd95_mm,16.27,5.95
+baseline_0,esophagus,absolute_rvd,0.2939,0.0472
+baseline_0,heart,dice,0.8404,0.0098
+baseline_0,heart,hd95_mm,26.75,19.59
+baseline_0,heart,absolute_rvd,0.1816,0.0299
+baseline_0,trachea,dice,0.7726,0.0143
+baseline_0,trachea,hd95_mm,30.53,27.51
+baseline_0,trachea,absolute_rvd,0.1746,0.0213
+baseline_0,aorta,dice,0.7613,0.0507
+baseline_0,aorta,hd95_mm,21.4,6.11
+baseline_0,aorta,absolute_rvd,0.18,0.0725
+baseline_0,four_organ_mean,dice,0.7158,0.0215
+baseline_0,four_organ_mean,hd95_mm,23.74,3.65
+baseline_0,four_organ_mean,absolute_rvd,0.2075,0.0265

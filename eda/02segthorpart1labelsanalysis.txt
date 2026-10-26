@@ -1,0 +1,49 @@
+Running labels.py crashes after writing the cv due to missing classes. 
+I believe this was noticed earlier by Naval - this part of the dataset does not contain the aorta label.
+
+We will get to what this means for analysis in a moment, first up is general stuff:
+For every patient the script loaded the CT and GT volumes and,
+per class, computed voxel count and volume in mililiters, number of connected components,
+mean HU inside the mask, the fraction of mask voxels below -500 HU (empty space), and the first and last slice containing that class. For
+
+
+Main finding: the aorta label is absent from all 20 GT files. Every patient contains
+only labels 0, 1, 2, 3. 
+
+Patient_07 is a bit of an outlier here - its GT2 file contains all five classes.
+Heart and trachea are voxel-identical between GT and GT2. The esophagus in GT has
+115229 voxels; in GT2 the esophagus has 25373 and the aorta 89856, which sum to
+115229. The number of voxels that differ between the two files is exactly 89856.
+It could be the case that GT is GT2 with every aorta voxel relabelled
+as esophagus. GT2 might therefroe be the in fact true five-class annotation and GT is a version
+with classes 1 and 4 merged. Note that the above is derived purely from voxel counts, and is a theory.
+
+Nonetheless despite the uncertainty of this finding, it would be consistent with the "esophagus" volumes across all patients being 127 to 522 ml,
+median 256 ml, which is many times more volume than that of a a real esophagus. What is
+labelled esophagus in every patient is esophagus plus aorta. 
+
+Everything else in the labels looks correct:
+- Heart: everybody has one, essentially zero voxels below
+  -500 HU, mean HU in the expected range. 
+- Trachea: mean HU -650 to -895, 67 to 96 percent of voxels below
+  -500 HU. 
+- Esophagus and trachea end on the same slice in every patient, so the
+  annotation was cut at a fixed anatomical level.
+
+Intensity populations. Mean HU inside the heart mask is bimodal: about 95 to 110 in
+patients 02, 03, 06, 09, 16 and about 0 to 35 in the other fifteen. The first group
+must have been scanned with intravenous contrast. Windowing and normalisation choices have to
+work for both, and the validation split should contain at least one of each.
+
+For our next steps I would keep in mind:
+1. Training on the current GT with K=5 would teach the network that the aorta never
+   exists and that the esophagus is abnormally large. If the test set is annotated with five classes, the
+   group would lose one whole class.
+2. It could be the case that SEGTHOR_CLEAN is meant to be our de-coupled aorta and esophagus
+
+3. We should consider our seperation options while we wait for part 2 of the data which might ship with corrected
+   labels.
+4. The five contrast patients and the three volume outliers should be spread acrossain and validation, not concentrated in one.
+5. The two-group and spacing-outlier observations from the metadata still stand; the
+   label analysis did not find any correlation between acquisition group and label
+   quality.
